@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingLeft="56dp"
+    android:paddingRight="56dp"
+    android:layout_width="match_parent"
+    android:layout_height="72dp">
+
+    <ImageView
+        android:id="@+id/track_image"
+        android:layout_centerVertical="true"
+        android:padding="4dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"/>
+    <TextView
+        android:layout_centerVertical="true"
+        android:id="@+id/track_title"
+        android:layout_marginLeft="56dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+
+</RelativeLayout>

@@ -19,4 +19,15 @@ public class Album {
     @SerializedName("genre_pic")
     private String picture;
 
+    public String getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getPicture() {
+        return picture;
+    }
 }

@@ -15,6 +15,7 @@ public class TrueMusic {
             .baseUrl(Config.API_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .build();
+
     private static final TrueMusicService SERVICE = RETROFIT.create(TrueMusicService.class);
 
     public static TrueMusicService getService() {

@@ -6,6 +6,6 @@ package com.appbuilder.truemusic.config;
 
 public class Config {
 
-    public static final String API_URL = "http://sittikiat.streetfood.in.th:1112";
+    public static final String API_URL = "http://sittikiat.streetfood.in.th:1111";
 
 }
