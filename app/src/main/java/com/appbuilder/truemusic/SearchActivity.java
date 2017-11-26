@@ -2,21 +2,15 @@ package com.appbuilder.truemusic;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.GridLayout;
 import android.widget.GridView;
-import android.widget.ListView;
-import android.widget.Toast;
 
-import com.appbuilder.truemusic.adapter.CustomOnItemClickListener;
 import com.appbuilder.truemusic.adapter.SearchAdapter;
-import com.appbuilder.truemusic.adapter.TopPlaylistAdapter;
 import com.appbuilder.truemusic.model.StringDataObject;
-import com.appbuilder.truemusic.model.TopPlaylist;
 
 import java.util.ArrayList;
 import java.util.List;

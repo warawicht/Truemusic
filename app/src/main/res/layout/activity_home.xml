@@ -10,17 +10,17 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:gravity="center_horizontal"
+        android:gravity="center"
         android:text="Home"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
         android:textColor="@android:color/black"
-        android:textSize="32sp"
         android:textStyle="bold" />
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_marginTop="5dp"
+        android:layout_height="30dp"
         android:layout_marginBottom="5dp"
-        android:layout_height="30dp">
+        android:layout_marginTop="5dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -30,6 +30,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginStart="10dp"
             android:text="Your Favorite"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textColor="@android:color/black"
             android:textStyle="bold" />
 
@@ -41,6 +42,7 @@
             android:layout_marginEnd="10dp"
             android:layout_marginRight="10dp"
             android:text="See All"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textColor="@android:color/holo_red_dark"
 
             android:textStyle="bold" />
@@ -52,13 +54,14 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
+
     </android.support.v7.widget.RecyclerView>
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_marginTop="5dp"
+        android:layout_height="30dp"
         android:layout_marginBottom="5dp"
-        android:layout_height="30dp">
+        android:layout_marginTop="5dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -68,6 +71,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginStart="10dp"
             android:text="Live Now"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textColor="@android:color/black"
             android:textStyle="bold" />
 
@@ -79,6 +83,7 @@
             android:layout_marginEnd="10dp"
             android:layout_marginRight="10dp"
             android:text="See All"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textColor="@android:color/holo_red_dark"
             android:textStyle="bold" />
 
@@ -89,6 +94,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
+
     </android.support.v7.widget.RecyclerView>
 
     <android.support.design.widget.BottomNavigationView

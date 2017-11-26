@@ -83,9 +83,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/live_add_image"
+                android:background="@color/whiteGray"
                 android:gravity="center"
                 android:text="Programer Life"
-                android:background="@color/whiteGray"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:textColor="@android:color/black" />
 
@@ -97,15 +97,28 @@
                 app:itemBackground="@color/whiteGray"
                 app:menu="@menu/live_control_navigation" />
 
-            <LinearLayout
-                android:layout_below="@id/live_control_navigation"
+            <TextView
+                android:id="@+id/live_chat_text"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content"
+                android:layout_below="@id/live_control_navigation"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="Chat"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@android:color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_below="@id/live_chat_text">
 
                 <ListView
                     android:id="@+id/live_chat_list_view"
                     android:layout_width="match_parent"
                     android:layout_height="500dp">
+
                 </ListView>
 
             </LinearLayout>

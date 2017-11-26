@@ -9,7 +9,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.appbuilder.truemusic.R;
-import com.appbuilder.truemusic.model.Chat;
 import com.appbuilder.truemusic.model.StringDataObject;
 
 import java.util.List;

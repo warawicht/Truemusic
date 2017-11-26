@@ -2,7 +2,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="48dp">
+    android:background="@drawable/background_border"
+    android:padding="10dp"
+    android:layout_margin="20dp"
+    android:layout_height="wrap_content">
 
 
     <TextView
@@ -10,6 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="name"
+        android:layout_marginRight="5dp"
         android:textStyle="bold"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
@@ -17,6 +21,7 @@
         android:id="@+id/chat_like_image_view"
         android:layout_width="14dp"
         android:layout_height="14dp"
+        android:layout_marginRight="5dp"
         android:layout_toRightOf="@id/chat_name_text_view"
         app:srcCompat="@drawable/ic_check_circle_black_48dp" />
 

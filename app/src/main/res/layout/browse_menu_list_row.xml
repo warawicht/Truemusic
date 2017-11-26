@@ -9,7 +9,8 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="9"
-        android:background="@android:color/holo_orange_dark"
+        android:paddingLeft="20dp"
+        android:gravity="left|center"
         android:text="xxxxxxxxxxxxxxxxxxxxx"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
@@ -18,7 +19,6 @@
         android:layout_width="0dp"
         android:layout_height="32dp"
         android:layout_weight="1"
-        android:background="@android:color/holo_red_light"
         app:srcCompat="@drawable/ic_chevron_right_48pt" />
 
 </LinearLayout>

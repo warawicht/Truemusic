@@ -9,7 +9,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.appbuilder.truemusic.R;
-import com.appbuilder.truemusic.model.Favorite;
 import com.appbuilder.truemusic.model.Live;
 
 import java.util.List;

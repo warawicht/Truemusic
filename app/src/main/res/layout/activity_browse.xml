@@ -10,10 +10,10 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:gravity="top|center_horizontal"
+        android:gravity="center"
         android:text="Browse"
         android:textColor="@android:color/black"
-        android:textSize="32sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
         android:textStyle="bold" />
 
     <TextView
@@ -21,8 +21,10 @@
         android:layout_height="30dp"
         android:background="@android:color/holo_red_light"
         android:text="Top Playlist Of The Week"
+        android:gravity="center|left"
         android:textColor="@android:color/white"
-        android:textSize="16sp"
+        android:paddingLeft="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textStyle="bold" />
 
     <android.support.v7.widget.RecyclerView
@@ -30,9 +32,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_below="@+id/browse_top_playlist_text_view"
-        android:layout_weight="1.5"
-        android:background="@android:color/holo_red_light">
-
+        android:layout_weight="1.5">
     </android.support.v7.widget.RecyclerView>
 
     <ListView
