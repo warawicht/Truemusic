@@ -1,27 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".BrowseActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:gravity="top|center_horizontal"
-        android:layout_alignParentTop="true"
         android:text="Browse"
         android:textColor="@android:color/black"
         android:textSize="32sp"
         android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@android:color/holo_red_light"
+        android:text="Top Playlist Of The Week"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/browse_top_playlist_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/browse_top_playlist_text_view"
+        android:layout_weight="1.5"
+        android:background="@android:color/holo_red_light">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <ListView
+        android:id="@+id/browse_menu_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingTop="25dp"
+        android:layout_weight="2">
+    </ListView>
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/browse_bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         app:itemBackground="@color/whiteGray"
-        android:layout_alignParentBottom="true"
         app:menu="@menu/bottom_navigation" />
 
-</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_home"
+        android:enabled="true"
+        android:checkable="false"
+        android:icon="@drawable/ic_favorite_black_48dp"
+        app:showAsAction="ifRoom"
+        android:title="" />
+    <item
+        android:id="@+id/action_browse"
+        android:enabled="true"
+        android:checkable="false"
+        android:icon="@drawable/ic_skip_previous_black_48dp"
+        android:title=""
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_live"
+        android:enabled="true"
+        android:checkable="false"
+        android:icon="@drawable/ic_pause_48pt"
+        android:title=""
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_search"
+        android:enabled="true"
+        android:checkable="false"
+        android:icon="@drawable/ic_skip_next_black_48dp"
+        android:title=""
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_profile"
+        android:enabled="true"
+        android:checkable="false"
+        android:icon="@drawable/ic_add_48pt"
+        android:title=""
+        app:showAsAction="ifRoom" />
+</menu>

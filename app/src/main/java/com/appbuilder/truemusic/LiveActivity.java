@@ -7,8 +7,18 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.ListView;
+import android.widget.Toast;
 
+import com.appbuilder.truemusic.adapter.ChatAdapter;
+import com.appbuilder.truemusic.adapter.CustomOnItemClickListener;
+import com.appbuilder.truemusic.adapter.TopPlaylistAdapter;
+import com.appbuilder.truemusic.model.Chat;
 import com.appbuilder.truemusic.model.Live;
+import com.appbuilder.truemusic.model.TopPlaylist;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import static com.appbuilder.truemusic.util.BottomNavigationViewUtil.disableShiftMode;
 
@@ -56,5 +66,21 @@ public class LiveActivity extends AppCompatActivity {
             }
         });
 
+
+        List<Chat> dummyList = new ArrayList<>();
+
+        for (int i = 1; i < 10; i++) {
+            Chat dummy = new Chat();
+            dummy.setName("User" + i);
+            dummy.setTime( (11 - i) + " mins ago");
+            dummy.setMessage("Hello World " + i);
+            dummyList.add(dummy);
+        }
+
+        ChatAdapter chatAdapter = new ChatAdapter(this, dummyList);
+
+        ListView listView = findViewById(R.id.live_chat_list_view);
+        listView.setAdapter(chatAdapter);
+        listView.setFocusable(false);
     }
 }
