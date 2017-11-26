@@ -1,5 +1,6 @@
 package com.appbuilder.truemusic;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -35,27 +36,35 @@ public class HomeActivity extends AppCompatActivity {
 
         getSupportActionBar().hide();
 
-        BottomNavigationView homeBottomNavigation = findViewById(R.id.home_bottom_navigation);
-        homeBottomNavigation.setSelectedItemId(R.id.action_home);
-        disableShiftMode(homeBottomNavigation);
+        BottomNavigationView bottomNavigation = findViewById(R.id.home_bottom_navigation);
+        bottomNavigation.setSelectedItemId(R.id.action_home);
+        disableShiftMode(bottomNavigation);
 
-        homeBottomNavigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+        bottomNavigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
 
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                Context packageContext = HomeActivity.this;
                 switch (item.getItemId()) {
                     case R.id.action_home:
-                        Intent toHome = new Intent(HomeActivity.this, HomeActivity.class);
-                        startActivity(toHome);
+                        startActivity(new Intent(packageContext, HomeActivity.class));
                         finish();
                         return true;
                     case R.id.action_browse:
+                        startActivity(new Intent(packageContext, BrowseActivity.class));
+                        finish();
                         return true;
                     case R.id.action_live:
+                        startActivity(new Intent(packageContext, LiveActivity.class));
+                        finish();
                         return true;
                     case R.id.action_profile:
+                        startActivity(new Intent(packageContext, ProfileActivity.class));
+                        finish();
                         return true;
                     case R.id.action_search:
+                        startActivity(new Intent(packageContext, SearchActivity.class));
+                        finish();
                         return true;
                 }
                 return false;

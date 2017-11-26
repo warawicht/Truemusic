@@ -9,7 +9,7 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="50dp"
         android:gravity="center_horizontal"
         android:text="Home"
         android:textColor="@android:color/black"
